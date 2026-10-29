@@ -1,8 +1,8 @@
 # Norm package template
 
-Use this repository template for every publishable Norm package.
+Use this repository template for every publishable [Norm](https://github.com/normlanguage/Norm) package.
 
-Replace `example_package` in `module.norm`, add source files under `src/`, and keep the generated root `SKILL.md` committed with each release.
+The template provides the repository shape and release entry points. Package requirements are maintained centrally in [Norm Package Standards](https://github.com/normlanguage/package-standards), while package ownership and immutable artifact publication are handled by the [Norm Registry](https://github.com/normlanguage/registry).
 
 ## Required workflow
 
@@ -12,5 +12,4 @@ Replace `example_package` in `module.norm`, add source files under `src/`, and k
 4. Run `scripts/validate-package.ps1` and the package tests.
 5. Release the package and `SKILL.md` from the same immutable tag.
 
-The Registry stores only package ownership. API facts and Skill content remain in this repository.
-
+The registry stores package ownership and release metadata. API facts and Skill content remain in the package repository; the Norm compiler and module system remain the canonical language sources.
